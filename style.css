@@ -1,0 +1,15 @@
+.titre {
+    text-align: center;
+}
+.gridPlayer {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(4, auto);
+    grid-auto-rows: auto;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 20px;
+}
+.gridPlayer div {
+    border: 1px solid;
+}
