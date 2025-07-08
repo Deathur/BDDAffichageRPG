@@ -18,7 +18,7 @@ try {
 $sql = "SELECT personnage.nom AS \"NomPersonnage\", surnom, level, classe.nom AS \"NomClasse\", arme.nom AS \"NomArme\"
         FROM personnage
         INNER JOIN classe ON personnage.idClasse = classe.idClasse
-        INNER JOIN arme ON personnage.idArmeUtilise = arme.idTypeArme;";
+        INNER JOIN arme ON personnage.idArmeUtilise = arme.idArme;";
 
 //Exécution
 $req = $pdo->prepare($sql);
